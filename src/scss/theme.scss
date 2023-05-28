@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+@import "vendor/reset";
+@import "vars";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: $black;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+a  {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Blocks */
+@import "blocks/btn";
+@import "blocks/notification";
+@import "blocks/nav";
+@import "blocks/search";
+@import "blocks/burger";
+@import "blocks/container";
+@import "blocks/footer";
+@import "blocks/auth";
+@import "blocks/comments";
+@import "blocks/tests";
+@import "blocks/searchPage";
+@import "blocks/prof";
+@import "blocks/test";
+@import "blocks/result";
+@import "blocks/reset";
+@import "blocks/faq";
+@import "blocks/university";
+@import "blocks/request";
+@import "blocks/professions";
+@import "blocks/exactProfessions";
+@import "blocks/edu";
+@import "blocks/table";
+@import "blocks/profession";
+@import "blocks/account";
+@import "blocks/history";
+@import "blocks/notFound";
+@import "blocks/admin";
+@import "blocks/loading";
+

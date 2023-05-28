@@ -1,0 +1,49 @@
+.history {
+  margin: 50px 0;
+  min-height: 60vh;
+}
+
+.history__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.history__subtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.history__empty {
+  margin: 25px 0;
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    display: inline-block;
+    margin-right: 25px;
+
+    &.mb20 {
+      margin-bottom: 20px;
+    }
+  }
+  &-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $blue;
+  }
+}

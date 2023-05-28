@@ -1,0 +1,74 @@
+.profession {
+  margin: 50px;
+
+  @media (max-width: 768px) {
+    margin: 25px 0;
+  }
+}
+
+.profession__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $black;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.profession__article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profession__date,
+.profession__author {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba($black, .8);
+}
+
+.profession__contents {
+  margin: 25px 0 50px;
+  &-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &-list {
+    list-style: circle;
+    margin: -5px 0 -5px 25px;
+  }
+  &-item {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $blue;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+}
+
+.profession__info {
+  margin: 50px 0;
+  &-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+}
+
+.profession__image {
+  margin: 25px 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

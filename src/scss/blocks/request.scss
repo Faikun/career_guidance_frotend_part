@@ -1,0 +1,70 @@
+.request {
+  margin: 50px 0;
+  min-height: 60vh;
+}
+
+.request__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.request__university {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.request__documents {
+  display: flex;
+  flex-direction: column;
+  margin: -10px 0;
+
+  &-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+      font-size: 1.05rem;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    label {
+      width: 40%;
+    }
+
+    input {
+      width: 60%;
+    }
+  }
+
+  &-iin {
+    padding: 10px 0 10px 20px;
+    border: 1px solid $black;
+    border-radius: 10px;
+
+    transition: border .2s linear;
+
+    &:focus {
+      border: 1px solid $green;
+    }
+  }
+
+  &-btn {
+    margin-top: 25px;
+  }
+}

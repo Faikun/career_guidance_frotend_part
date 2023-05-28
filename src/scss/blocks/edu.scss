@@ -1,0 +1,250 @@
+.edu {
+  margin: 50px 0;
+  min-height: 60vh;
+}
+
+.edu__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.edu__search {
+  background-color: $blue;
+  padding: 25px;
+  font-size: 1.2rem;
+
+  @media (max-width: 1250px) {
+    font-size: 1rem;
+  }
+
+  &-intro {
+    width: 100%;
+    display: flex;
+    height: 50px;
+
+    input {
+      width: 90%;
+      padding-left: 20px;
+      border-radius: 10px 0 0 10px;
+      border: none;
+
+      @media (max-width: 725px) {
+        width: 75%;
+      }
+    }
+    &>.button {
+      width: 10%;
+      border: 1px solid $white;
+      background-color: $blue;
+      color: $white;
+      transition: background-color .2s linear;
+
+      &:hover {
+        background-color: darken($blue, 15%);
+      }
+
+      @media (max-width: 725px) {
+        width: 25%;
+      }
+    }
+  }
+
+  &-additional {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &-block,
+  &-subjects {
+    position: relative;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @media (max-width: 1250px) {
+      padding: 10px 5px;
+    }
+  }
+  &-subjects {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: auto;
+      margin-left: 10px;
+    }
+  }
+}
+.edu__dropdown {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 2;
+  margin: -10px 0;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    label {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      margin-right: 15px;
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+.edu__checkbox {
+  display: block;
+  margin: auto 0;
+  align-items: center;
+  color: $white;
+
+  label {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  input {
+    cursor: pointer;
+  }
+}
+
+.edu__results {
+  width: 100%;
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  &-top {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    span {
+      width: 16%;
+      text-align: center;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    span:first-child {
+      width: 52%;
+      text-align: left;
+      @media (max-width: 900px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+
+    li:nth-child(2n) {
+      background-color: rgba($black, .025);
+    }
+  }
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
+    &:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      background-color: $gray;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &-additional {
+    display: flex;
+    align-items: center;
+    color: rgba($black, .75);
+    margin: 10px -10px 0;
+
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
+
+    span {
+      margin: 0 10px;
+    }
+  }
+
+  &-data {
+    width: 16%;
+    text-align: center;
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+
+    &.first {
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+    }
+  }
+
+  &-logo {
+    width: 50px;
+    height: auto;
+  }
+}

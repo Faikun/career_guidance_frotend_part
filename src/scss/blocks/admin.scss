@@ -1,0 +1,163 @@
+.admin {
+  margin: 50px 0;
+  min-height: 60vh;
+}
+
+.admin__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.admin__subtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  &.mt50 {
+    margin-top: 50px;
+  }
+}
+
+.admin__table {
+  &-additional {
+    width: 90%;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  &-block {
+    width: 50%;
+  }
+
+  &-edit {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+
+    margin-left: 10px;
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+  &-input {
+    background-color: $white;
+    padding: 10px;
+    border: 1px solid $black;
+
+    &:focus {
+      border: 1px solid $green;
+    }
+
+    &.active {
+      border: 1px solid $green;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 150px;
+    }
+    @media (max-width: 1025px) {
+      max-width: 100%;
+      width: 80%;
+    }
+  }
+  &-select {
+    width: 80%;
+    padding: 10px;
+    min-width: 100px;
+
+    &:focus {
+      border: 1px solid $green;
+    }
+    &.active {
+      border: 1px solid $green;
+    }
+  }
+}
+
+.admin__prof,
+.admin__universities {
+  display: flex;
+  flex-direction: column;
+  margin: -10px 0;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    input, textarea, select {
+      width: calc(100% - 200px);
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+      &:focus {
+        border: 1px solid $green;
+      }
+    }
+
+    input[type='checkbox'] {
+      max-width: 30px;
+      height: 30px;
+    }
+
+    select,
+    input {
+      height: 50px;
+    }
+
+    select.multiple {
+      height: 80px;
+    }
+
+    textarea,
+    input{
+      padding: 10px;
+    }
+
+    label {
+      width: 200px;
+      display: inline-block;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.admin__btn {
+  max-width: 750px;
+  margin-top: 25px;
+  align-self: center;
+  padding: 15px 270px;
+
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    padding: 15px 150px;
+  }
+
+  @media (max-width: 750px) {
+    max-width: 300px;
+    padding: 15px 75px;
+  }
+}

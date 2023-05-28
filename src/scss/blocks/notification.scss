@@ -1,0 +1,51 @@
+.notification {
+  width: 100%;
+  background-color: $white;
+  color: $black;
+
+  padding: 25px 20px;
+  margin: 50px 0;
+  box-shadow: 10px 10px 15px 0 rgba($black, .25);
+  border-radius: 10px;
+
+  &.danger {
+    border-left: 5px solid $red;
+  }
+  &.success {
+    border-left: 5px solid $green;
+  }
+}
+
+.notification__intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.notification__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.notification__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.notification__image {
+  width: 25px;
+  height: 25px;
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+}

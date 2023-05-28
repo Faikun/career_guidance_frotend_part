@@ -1,0 +1,99 @@
+.test {
+  margin: 50px 0;
+
+  @media (max-width: 768px) {
+    margin: 25px 0;
+  }
+}
+
+.test__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $black;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.test__questionCounter {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $black;
+  margin-bottom: 25px;
+}
+
+.test__question {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $black;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  &-name {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  &-answers {
+    margin: -15px 0;
+  }
+
+  &-answer {
+    background-color: lighten($blue, 32%);
+    color: $black;
+    font-size: 1rem;
+    padding: 10px 25px;
+    margin: 15px 0;
+    transition: background-color .2s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+.test__passed {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: rgba($black, .75);
+}
+
+.test__questionNums {
+  display: flex;
+  margin: 0 -5px -10px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    margin: 0 -2.5px -5px;
+  }
+}
+
+.test__questionNum {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: $black;
+  cursor: pointer;
+
+  border: 1px solid $black;
+  margin: 0 5px 10px;
+
+  &.active {
+    background-color: $green;
+    color: $white;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4px;
+    font-size: .8rem;
+    margin: 0 2.5px 5px;
+    border-radius: 5px;
+  }
+}

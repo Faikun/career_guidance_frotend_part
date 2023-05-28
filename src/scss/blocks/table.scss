@@ -1,0 +1,57 @@
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+  border: 2px solid $gray;
+
+  th, td {
+    padding: 0.75rem;
+    border: 2px solid $gray;
+    text-align: center;
+  }
+
+  th {
+    vertical-align: bottom;
+    border: 3px solid $gray;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  @media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      border: 1px solid #ccc;
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+  }
+}

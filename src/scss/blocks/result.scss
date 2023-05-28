@@ -1,0 +1,132 @@
+.result {
+  margin: 50px 0;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin: 25px 0;
+  }
+}
+
+.result__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.test__completed {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  &-bottom {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.result__show {
+  font-size: 1.2rem;
+  font-weight: 400;
+  list-style: inside;
+
+  &-item>span {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.result__auth {
+  &-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $blue;
+    margin-bottom: -10px;
+
+    &>a {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.result__statement {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.result__img {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.result__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.result__description {
+  font-size: 1rem;
+  font-weight: 400;
+
+  display: block;
+  max-height: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 10px 20px;
+}
+
+.result__detail {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba($blue, .9);
+  transition: color .2s ease-in-out;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: rgba(lighten($blue, 10%), 1);
+  }
+}
+
+.result_slide {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  transition: transform .4s ease-in-out;
+  box-shadow: 2px 5px 5px rgba($black, 0.2);
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
